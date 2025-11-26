@@ -21,9 +21,9 @@ public class InputOutput {
         String data = """
         Thank you for your participation!
         Here's your data:
-        Name: %s
-        Age: %d
-        GPA: %.2f
+            Name    : %s
+            Age     : %d
+            GPA     : %.2f
         """.formatted(name, age, gpa);
 
         System.out.println(data);
