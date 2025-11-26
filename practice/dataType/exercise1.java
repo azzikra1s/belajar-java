@@ -11,12 +11,12 @@ import java.util.Scanner;
 
 public class exercise1 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner inputRadius = new Scanner(System.in);
         int r;
         double phi;
 
         System.out.println("Enter the radius of the circle: ");
-        r = scanner.nextInt();
+        r = inputRadius.nextInt();
         System.out.println("Circle radius: " + r);
 
         if (r % 7 == 0) {
@@ -24,7 +24,7 @@ public class exercise1 {
         } else {
             phi = 3.14;
         }
-        
+
         double luasLingkaran = phi * r * r;
         System.out.println("Circle area: " + luasLingkaran);
     }
