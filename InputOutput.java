@@ -29,5 +29,8 @@ public class InputOutput {
         """.formatted(name, age, gpa);
 
         System.out.println(data);
+
+        //! Close scanner for resource management
+        scanner.close();
     }
 }
