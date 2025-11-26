@@ -26,6 +26,7 @@ public class StringConcat {
         //* %s : String
         //* %d : Integer (decimal)
         //* %f : Floating-point number
+        //* %.2f : Floating-point number with 2 decimal places
         //* %c : Character
         //* %b : Boolean
 
