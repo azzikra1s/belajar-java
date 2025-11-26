@@ -3,6 +3,7 @@ import java.time.LocalTime;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter; //! Must import DateTimeFormatter for custom formatting
 
+//* Checkout to exercise2.java for more practice with date and time formatting
 public class DateTime {
     public static void main(String[] args) {
         LocalDate date = LocalDate.now();
