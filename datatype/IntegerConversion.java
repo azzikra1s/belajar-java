@@ -43,7 +43,7 @@ public class IntegerConversion {
         System.out.println("String Value: " + stringValue2);
         System.out.println("Number: " + number2);
 
-        // * String to Integer Conversion: valueOf();
+        // * Conversion: valueOf(); (More flexible, can convert to various types of data)
         String stringValue3 = "2000";
         int number3 = Integer.valueOf(stringValue3); // * string to int
         System.out.println("String Value: " + stringValue3);
