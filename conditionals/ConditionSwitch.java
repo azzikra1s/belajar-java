@@ -7,7 +7,7 @@ public class ConditionSwitch {
         System.out.print("Input your Month (1-12): ");
         int monthNumber = scanner.nextInt();
 
-        //* Java 14+ Modern Switch Expression with Yield
+        //* Java 14+ Modern Switch Expression with Yield (Switch Lambda)
         String monthName = switch (monthNumber) {
             case 1 -> "January! (Capricorn)";
             case 2 -> "February! (Aquarius)";
