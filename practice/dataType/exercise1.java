@@ -1,5 +1,5 @@
 /*
-    !LATIHAN 4 — Hitung luas lingkaran
+    !LATIHAN 1 — Hitung luas lingkaran
 
     *Gunakan:
         *radius → float atau double
