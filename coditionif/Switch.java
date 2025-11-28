@@ -23,6 +23,7 @@ public class Switch {
             case 12 -> "December! (Capricorn)";
             default -> "Invalid month input (1-12)!";
         };
+        
         if (monthNumber >= 1 && monthNumber < 13) {
             System.out.println("Your Month is %s, month-%d in the year.".formatted(monthName, monthNumber));
         } else {
