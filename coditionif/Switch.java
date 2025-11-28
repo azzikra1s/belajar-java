@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ConditionSwitch {
+public class Switch {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -23,8 +23,12 @@ public class ConditionSwitch {
             case 12 -> "December! (Capricorn)";
             default -> "Invalid month input (1-12)!";
         };
-
-        System.out.println("Your Month is %s, %d month in the year.".formatted(monthName, monthNumber));
+        if (monthNumber >= 1 && monthNumber < 13) {
+            System.out.println("Your Month is %s, month-%d in the year.".formatted(monthName, monthNumber));
+        } else {
+            System.out.println(monthName);
+        }
+        
 
         //* Traditional Switch Statement
         /*
