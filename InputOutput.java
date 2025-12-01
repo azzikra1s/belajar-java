@@ -10,14 +10,23 @@ public class InputOutput {
         String name;
         int age;
         double gpa;
+        char grade;
 
         // Input from user
+        //* input string for name
         System.out.print("Enter your name: ");
-        name = scanner.nextLine(); //* input string for name
+        name = scanner.nextLine(); 
+        //* input integer for age
         System.out.print("Enter your age: ");
-        age = scanner.nextInt(); //* input integer for age
+        //? age = scanner.nextInt(); lebih dianjurkan yg dibawah:
+        age = Integer.valueOf(scanner.nextLine());
+        //* input double for GPA
         System.out.print("Enter your GPA: ");
-        gpa = scanner.nextDouble(); //* input double for GPA
+        //? gpa = scanner.nextDouble(); 
+        gpa = Double.valueOf(scanner.nextLine());
+        //* input char for grade
+        System.out.println("Enter your grade (A, B, C, D): ");
+        grade = scanner.nextLine().charAt(0);
 
         // Output to console
         String data = """
@@ -26,7 +35,8 @@ public class InputOutput {
             Name    : %s
             Age     : %d
             GPA     : %.2f
-        """.formatted(name, age, gpa);
+            Grade  : %c
+        """.formatted(name, age, gpa, grade);
 
         System.out.println(data);
 
