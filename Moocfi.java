@@ -3,12 +3,23 @@ import java.util.Scanner;
 public class Moocfi {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        String a;
+        int b;
+        double c;
+        boolean d;
 
-        System.out.println("I will tell you a story, but I need some information first.");
-        System.out.println("What is the main Character called?");
-        String characterName = scanner.nextLine();
-        System.out.println("What is the character's job?");
-        String characterJob = scanner.nextLine();
-        System.out.println("Here is the story: Once upon a time there was a " + characterName + ", who was a " + characterJob + ". On the way to work, " + characterName + " often pondered what being a " + characterJob + " really meant.");
+        System.out.println("Give a string: ");
+        a = scanner.nextLine();
+        System.out.println("Give an integer: ");
+        b = Integer.valueOf(scanner.nextLine());
+        System.out.println("Give a double: ");
+        c = Double.valueOf(scanner.nextLine());
+        System.out.println("Give a boolean: ");
+        d = Boolean.valueOf(scanner.nextLine());
+
+        System.out.println("You gave the string " + a);
+        System.out.println("You gave the integer " + b);
+        System.out.println("You gave the double " + c);
+        System.out.println("You gave the boolean " + d);
     }
 }

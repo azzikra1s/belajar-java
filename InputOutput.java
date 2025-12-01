@@ -11,6 +11,7 @@ public class InputOutput {
         int age;
         double gpa;
         char grade;
+        boolean isGraduated;
 
         // Input from user
         //* input string for name
@@ -27,6 +28,10 @@ public class InputOutput {
         //* input char for grade
         System.out.println("Enter your grade (A, B, C, D): ");
         grade = scanner.nextLine().charAt(0);
+        //* input boolean for graduation status
+        System.out.print("Are you graduated? (true/false): ");
+        //? isGraduated = scanner.nextBoolean();
+        isGraduated = Boolean.valueOf(scanner.nextLine());
 
         // Output to console
         String data = """
@@ -35,8 +40,9 @@ public class InputOutput {
             Name    : %s
             Age     : %d
             GPA     : %.2f
-            Grade  : %c
-        """.formatted(name, age, gpa, grade);
+            Grade   : %c
+            Graduated: %b
+        """.formatted(name, age, gpa, grade, isGraduated);
 
         System.out.println(data);
 
