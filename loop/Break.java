@@ -8,26 +8,17 @@ public class Break {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        final String password = "java123";
-        String input;
-        int attempts = 0;
 
         while (true) {
-            System.out.print("Masukkan password: ");
-            input = scanner.nextLine();
+            System.out.print("Ketik 'exit' untuk berhenti: ");
+            String input = scanner.nextLine();
 
-            if (input.equals(password)) {
-                System.out.println("Login berhasil!");
-                break; // stop loop → lanjut ke program utama
+            if (input.equalsIgnoreCase("exit")) {
+                System.out.println("Program berhenti.");
+                break; //? keluar dari while(true)
             }
 
-            attempts++;
-            if (attempts >= 3) {
-                System.out.println("Akses ditolak! Anda hanya mendapat kesempatan 3 kali.");
-                break; // stop loop → lanjut ke program utama
-            }
-
-            System.out.println("Password salah, coba lagi.\n");
+            System.out.println("Anda memasukkan: " + input);
         }
 
         scanner.close();

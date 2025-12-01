@@ -2,7 +2,8 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 //* You can use LocalDateTime to get both date and time information
 //* Or import LocalDate and LocalTime separately if needed for more specific use cases
-public class exercise2 {
+
+public class Exercise2 {
     public static void main(String[] args) {
         LocalDateTime currentDateTime = LocalDateTime.now();
         System.out.println(currentDateTime.getDayOfWeek());    // * Day name
